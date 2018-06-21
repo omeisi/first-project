@@ -1,0 +1,17 @@
+.features-item{
+
+	position: relative;
+	padding-left: 94px; /*push the content to the right*/
+	padding-bottom: 2.5rem;
+
+	&__icon {
+		position: absolute; /*will be one on each other*/
+		left:0; /*push the "icon" all the wat to the left"*/
+	}
+
+	&__title {
+		font-size: 1.875rem;
+		font-weight: 300;
+		margin-bottom: .8rem;
+	}
+}

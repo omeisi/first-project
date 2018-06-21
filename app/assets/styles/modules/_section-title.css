@@ -1,0 +1,28 @@
+.section-title {
+	font-size: 2.55rem;
+	font-weight: 300;
+	text-align: center; /*cetered the text in the middle of the page*/
+
+	@mixin atSmall {
+		font-size: 3.875rem;
+	}
+
+	strong {
+		font-weight: 500;
+	}
+
+	&__icon {
+		
+		display: block; /* will make the content each in one block */
+		margin-left:auto; /*makes the content in the middle of the screen*/
+		margin-right: auto; /*makes the content in the middle of the screen*/
+		margin-bottom: .6rem;
+
+		@mixin atSmall {
+			margin-right: 0.5rem;
+			margin-bottom: 0;
+			display: inline-block;
+			margin-left:0;
+		}
+	}
+}
