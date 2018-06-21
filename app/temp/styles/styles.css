@@ -358,6 +358,10 @@ img {
 	box-sizing: border-box;
 }
 
+a {
+	color:#d59541;
+}
+
 .large-hero {
 	position: relative;
 	border-bottom: 10px solid #2f5572;
@@ -462,7 +466,7 @@ img {
 	padding-left: 18px;
 	margin-left:auto;
 	margin-right:auto;
-	max-width: 1200px;
+	max-width: 1236px;
 }
 
 .wrapper__medium {
@@ -473,6 +477,18 @@ img {
 .wrapper .wrapper {
 		padding-right: 0;
 		padding-left: 0;
+	}
+
+.wrapper__b-margin {
+
+		margin-bottom: 1rem;
+	}
+
+@media (min-width: 530px){
+
+.wrapper__b-margin {
+			margin-bottom: 3.875rem
+	}
 	}
 
 .page-section {
@@ -542,6 +558,11 @@ img {
 		margin-bottom: 1.6em;
 	}
 
+.headline__no-t-margin {
+		margin-top: 0;
+
+	}
+
 /*this is how you make sure the div has and know his hieght*/
 
 .row::after {
@@ -558,15 +579,49 @@ img {
 		padding-right: 65px;
 	}
 
+.row__b-margin-until-med {
+		margin-bottom: 1rem;
+	}
+
 @media (min-width: 800px){
 
-	.row__4 {
-		float:left;
-		width: 33.33%;
+		.row__b-margin-until-med {
+		margin-bottom: 0;
 	}
 
-	.row__8 {
-		float:right;
-		width: 66.66%;
+		.row__med-4 {
+			float:left;
+			width: 33.33%;
+		}
+
+		.row__med-4--larger {
+			width: 37%;
+		}
+
+		.row__med-8 {
+			float:left;
+			width: 66.66%;
+		}
+
+		.row__med-8--smaller {
+			width: 63%;
+		}
+	}
+
+.generic-content-container p {
+		line-height: 1.65; /* space between the lines */
+		font-size: 1rem;
+		margin:1.8rem 0;
+	}
+
+@media (min-width: 530px){
+
+.generic-content-container p {
+			font-size: 1.125rem
 	}
 	}
+
+.generic-content-container p a {
+		font-weight: 700;
+	}
+
