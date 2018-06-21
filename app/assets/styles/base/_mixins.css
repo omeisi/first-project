@@ -15,3 +15,11 @@
 		@mixin-content;
 	}
 }
+
+@define-mixin clearFix { /*this is how you make sure the div has and know his hieght*/
+	&::after {
+		content: " ";
+		clear: both;
+		display: table;
+	}
+}
