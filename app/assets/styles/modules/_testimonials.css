@@ -1,0 +1,43 @@
+.testimonials {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 0 18px 1px 18px;
+	margin-bottom: 98px;
+
+
+	@mixin atLarge {
+		margin-bottom: 0;
+		padding: 0 1.8125rem 1px 1.8125rem;
+	}
+
+	&__photo {
+		border-radius: 80px; /*makes the picture rouded*/
+		overflow: hidden; /*you got to do this to make the picture rounded*/
+		width:160px;
+		height: 160px;
+		margin:0 auto -80px auto;
+		position: relative; /* let you play with the image outside the div*/
+		top:-80px;/*push the picture up half way*/
+		border: 6px solid rgba(255, 255, 255, 0.8); 
+	}
+
+	&__last {
+		margin-bottom: 0;
+	}
+
+	&__title {
+		color:$mainBlue;
+		text-align: center;
+		font-size: 1.5rem;
+		margin:0;
+
+	}
+
+	&__subtitle {
+
+		color:$mainOrange;
+		text-align: center;
+		margin:0.25rem 0 1rem 0;
+		font-size: 0.93rem;
+
+	}
+}

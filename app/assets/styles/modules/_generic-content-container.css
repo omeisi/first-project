@@ -2,12 +2,12 @@
 
 	p {
 		font-weight: 300;
-		line-height: 1.6rem; /* space between the lines */
+		line-height: 1.8rem; /* space between the lines */
 		font-size: 1rem;
 		margin:0 0 1.8rem 0;
 
 		@mixin atSmall {
-			font-size: 1.875rem;
+			font-size: 1.2rem;
 		}
 	}
 

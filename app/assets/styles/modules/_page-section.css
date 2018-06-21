@@ -6,8 +6,38 @@
 		padding: 4.5rem 0 ;
 	}
 
+	&__no-b-padding-until-med {
+		padding-bottom: 0 ;
+
+		@mixin atMedium {
+			padding-bottom: 4.5rem;
+		}
+	}
+
+	&__no-b-padding-until-large {
+		padding-bottom: 0 ;
+
+		@mixin atLarge {
+			padding-bottom: 4.5rem;
+		}
+	}
+
+
 	&__blue {
 		background: $mainBlue;
 		color:white;
+	}
+
+	&__testimonials {
+
+		background-color: lightBlue;
+
+		@mixin atLarge {
+			background: url('/assets/images/testimonials-bg.jpg') top center no-repeat; /*this is how you add a picture as a background*/
+			background-size: cover; /*will always cover the div with the picture*/
+
+		}
+
+		
 	}
 }
