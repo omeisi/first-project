@@ -1,0 +1,17 @@
+.wrapper {
+	padding-right: 18px;
+	padding-left: 18px;
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 1200px;
+
+	&__medium {
+		max-width: 976px; 
+
+	}
+
+	.wrapper {
+		padding-right: 0;
+		padding-left: 0;
+	}
+}
