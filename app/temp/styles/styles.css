@@ -576,7 +576,7 @@ a {
 	}
 
 .row__space-large  {
-		margin-right: -100px;
+		margin-right: -70px;
 	}
 
 .row__space-large > div{
@@ -584,7 +584,7 @@ a {
 	}
 
 .row__space >div {
-		padding-right: 100px;
+		padding-right: 70px;
 	}
 
 .row__b-margin-until-med {
@@ -623,15 +623,15 @@ a {
 
 .generic-content-container p {
 		font-weight: 300;
-		line-height: 1.65; /* space between the lines */
-		font-size: 0.8rem;
+		line-height: 1.6rem; /* space between the lines */
+		font-size: 1rem;
 		margin:0 0 1.8rem 0;
 	}
 
 @media (min-width: 530px){
 
 .generic-content-container p {
-			font-size: 1.6rem
+			font-size: 1.875rem
 	}
 	}
 
@@ -679,18 +679,47 @@ a {
 .features-item{
 
 	position: relative;
-	padding-left: 94px; /*push the content to the right*/
+	padding-left: 0px; /*push the content to the right*/
 	padding-bottom: 2.5rem;
 }
 
+@media (min-width: 530px){
+
+.features-item{
+		padding-left: 94px /*push the content to the right*/
+}
+	}
+
 .features-item__icon {
-		position: absolute; /*will be one on each other*/
-		left:0; /*push the "icon" all the wat to the left"*/
+
+		display:block;
+		margin:0 auto;
+	}
+
+/*centered the icon*/
+
+@media (min-width: 530px){
+
+.features-item__icon {
+			position: absolute; /*will be one on each other*/
+			left:0 /*push the "icon" all the wat to the left"*/
+	}
 	}
 
 .features-item__title {
-		font-size: 1.875rem;
+		font-size: 1.6rem;
+		margin-top: 0.7em;
 		font-weight: 300;
-		margin-bottom: .8rem;
+		margin-bottom: 0.8rem;
+		text-align: center;
+	}
+
+@media (min-width: 530px){
+
+.features-item__title {
+			text-align: left;
+			margin-top:1rem;
+			font-size: 1.875rem
+	}
 	}
 
