@@ -8,13 +8,25 @@
 		margin-right: -65px;
 	}
 
-	&__space > div{
+	&__space-large  {
+		margin-right: -70px;
+	}
+
+	&__space-large > div{
 		padding-right: 65px;
 	}
+
+	&__space >div {
+		padding-right: 70px;
+	}
+
+	
 	
 	&__b-margin-until-med {
 		margin-bottom: 1rem;
 	}
+
+
 
 
 	@mixin atMedium {
@@ -29,7 +41,12 @@
 		}
 
 		&__med-4--larger {
-			width: 37%;
+			width: 40%;
+		}
+
+		&__med-6 {
+			float: left;
+			width:50%;
 		}
 
 		&__med-8 {
@@ -38,8 +55,10 @@
 		}
 
 		&__med-8--smaller {
-			width: 63%;
+			width: 60%;
 		}
+
+
 	}
 
 }

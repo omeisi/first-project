@@ -1,0 +1,37 @@
+.features-item{
+
+	position: relative;
+	padding-left: 0px; /*push the content to the right*/
+	padding-bottom: 2.5rem;
+
+	@mixin atSmall {
+		padding-left: 94px; /*push the content to the right*/
+	}
+
+
+	&__icon {
+
+		display:block;
+		margin:0 auto; /*centered the icon*/
+		
+		@mixin atSmall {
+			position: absolute; /*will be one on each other*/
+			left:0; /*push the "icon" all the wat to the left"*/
+		}
+	}
+
+	&__title {
+		font-size: 1.6rem;
+		margin-top: 0.7em;
+		font-weight: 300;
+		margin-bottom: 0.8rem;
+		text-align: center;
+
+		@mixin atSmall {
+			text-align: left;
+			margin-top:1rem;
+			font-size: 1.875rem;
+			
+		}
+	}
+}
