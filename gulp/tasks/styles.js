@@ -7,12 +7,13 @@ var cssvars = require('postcss-simple-vars');
 var nestedcss = require('postcss-nested');
 var cssimport = require('postcss-import');
 var mixins = require('postcss-mixins');
+var hexrgba = require('postcss-hexrgba');
 
 gulp.task('styles', function(){
 // this will make sure the code run through pipes and get updated for most browsers
 //even if error comes up this task won't stop
 	return gulp.src('./app/assets/styles/styles.css')
-		.pipe(postcss([cssimport, mixins ,cssvars ,nestedcss, autoprefixer]))
+		.pipe(postcss([cssimport, mixins ,cssvars ,nestedcss,hexrgba, autoprefixer]))
 		.on('error', function(errorInfo){
 			console.log(errorInfo.toString());
 			this.emit('end');

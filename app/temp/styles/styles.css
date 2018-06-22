@@ -378,6 +378,7 @@ a {
 
 .large-hero__text-content {
 
+	padding-top:88px;
 	position : absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -385,7 +386,15 @@ a {
 	left:0;
 	width: 100%;
 	text-align: center;
-	
+
+	}
+
+@media (min-width: 800px){
+
+.large-hero__text-content {
+		padding-top:60px
+
+	}
 	}
 
 .large-hero__title {
@@ -1011,3 +1020,103 @@ a {
 	}
 	}
 
+.site-header {
+	padding: 10px;
+	position:absolute; /*let the content sit on eachother*/
+	z-index: 2; /*make the header sit on top of the large hero image*/
+	width: 100%;
+
+
+}
+
+/*use the full width of the screen*/
+
+@media (min-width: 800px){
+
+.site-header {
+		background-color: rgba(47,85,114,0.3)
+
+
+}
+	}
+
+.site-header__btn-container {
+		float: right; /*move the content all the way to the right*/
+	}
+
+.site-header__logo {
+		left:50%; 
+		-webkit-transform: translateX(-50%) scale(.8); 
+		        transform: translateX(-50%) scale(.8);
+		-webkit-transform-origin:50% 0;
+		        transform-origin:50% 0;
+		position: absolute;
+		background-color: #2f5572;
+		padding: 25px 35px;
+		top:0;
+	}
+
+@media (min-width: 800px){
+
+.site-header__logo {
+			left:auto;
+			-webkit-transform: translateX(0);
+			        transform: translateX(0)
+	}
+	}
+
+.site-header__logo__graphic {
+			text-indent: -9999px;/*hide the text on the logo*/
+	}
+
+.site-header__menu-icon{
+		width: 20px;
+		height: 20px;
+		background-color: #fff;
+		position: absolute;
+		top:10px;
+		right:10px;
+	}
+
+@media (min-width: 800px){
+
+.site-header__menu-icon{
+			display: none
+	}
+	}
+
+.site-header__menu-content {
+		display: none;
+	}
+
+@media (min-width: 800px){
+
+.site-header__menu-content {
+			display: block
+	}
+	}
+
+.primery-nav__pull-right{
+		float: right;
+	}
+
+.primery-nav ul {
+		margin: 0;
+		padding: 0;
+
+
+	}
+
+.primery-nav li {
+		list-style: none; /* takes the bullets away*/
+		float:left;
+		padding-right: 20px;/* makes a space between the tabs*/
+	}
+
+.primery-nav a {
+		color: #FFF;
+		text-decoration: none; /*remove the under line from the word*/
+		font-weight: 300;
+		display: block;
+		padding: 12px 0;
+	}

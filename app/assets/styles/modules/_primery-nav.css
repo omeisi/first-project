@@ -1,0 +1,27 @@
+.primery-nav{
+
+	&__pull-right{
+		float: right;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+
+
+	}
+
+	li {
+		list-style: none; /* takes the bullets away*/
+		float:left;
+		padding-right: 20px;/* makes a space between the tabs*/
+	}
+
+	a {
+		color: #FFF;
+		text-decoration: none; /*remove the under line from the word*/
+		font-weight: 300;
+		display: block;
+		padding: 12px 0;
+	}
+}
