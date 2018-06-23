@@ -343,25 +343,23 @@ template {
 
 &lightBlue: #e0e6ef;
 
-body {
-
-	font-family: 'Roboto', 'sans-serif';
-	color: #333;
-	
-}
-
-img {
-	
-	max-width: 100%;
-	height: auto;
-}
-
 * {
 	box-sizing: border-box;
 }
 
 a {
 	color:#d59541;
+}
+
+body {
+	font-family: 'Roboto', 'sans-serif';
+	color: #2f5572;
+}
+
+img {
+	
+	max-width: 100%;
+	height: auto;
 }
 
 .large-hero {
@@ -593,7 +591,7 @@ a {
 .headline {
 	color: #2f5572;
 	font-weight: 300; /* make the content not so bold */
-	font-size: 1.9rem;
+	font-size: 1.45rem;
 }
 
 @media (min-width: 530px){
@@ -719,7 +717,7 @@ a {
 			}
 
 			.row__large-4--larger {
-				width: 40%;
+				width: 37%;
 			}
 
 			.row__large-6 {
@@ -733,7 +731,7 @@ a {
 			}
 
 			.row__large-8--smaller {
-				width: 60%;
+				width: 63%;
 			}
 	}
 
@@ -766,14 +764,14 @@ a {
 .generic-content-container p {
 		font-weight: 300;
 		line-height: 1.8rem; /* space between the lines */
-		font-size: 1rem;
+		font-size: 0.8rem;
 		margin:0 0 1.8rem 0;
 	}
 
 @media (min-width: 530px){
 
 .generic-content-container p {
-			font-size: 1.2rem
+			font-size: 1.1rem
 	}
 	}
 
