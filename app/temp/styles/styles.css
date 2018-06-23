@@ -660,11 +660,11 @@ img {
 		}
 
 .row__space-large  {
-			margin-right: -70px;
+			margin-right: 0px;
 		}
 
 .row__space-large > div{
-			padding-right: 65px;
+			padding-right: 0px;
 		}
 
 .row__space > div {
@@ -676,6 +676,7 @@ img {
 		}
 
 @media (min-width: 800px){
+			
 
 			.row__b-margin-until-med {
 			margin-bottom: 0;
@@ -717,7 +718,7 @@ img {
 			}
 
 			.row__large-4--larger {
-				width: 37%;
+				width: 40%;
 			}
 
 			.row__large-6 {
@@ -731,7 +732,7 @@ img {
 			}
 
 			.row__large-8--smaller {
-				width: 63%;
+				width: 60%;
 			}
 	}
 
@@ -823,7 +824,7 @@ img {
 	}
 
 .features-item{
-
+	max-width: 400px;
 	position: relative;
 	padding-left: 0px; /*push the content to the right*/
 	padding-bottom: 2.5rem;

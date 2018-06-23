@@ -1,5 +1,5 @@
 .features-item{
-
+	max-width: 400px;
 	position: relative;
 	padding-left: 0px; /*push the content to the right*/
 	padding-bottom: 2.5rem;
