@@ -39,7 +39,7 @@
 		background-color: #fff;
 		position: absolute;
 		top:10px;
-		right:10px;
+		right:30px;
 
 		@mixin atMedium {
 			display: none;
