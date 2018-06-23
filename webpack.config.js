@@ -1,7 +1,6 @@
 var path = require('path');
 
 module.exports = {
-	mode:'none',
 	entry: "./app/assets/scripts/App.js",
 	output: {
 		path: path.resolve(__dirname,"./app/temp/scripts"),
@@ -20,7 +19,7 @@ module.exports = {
 						presets: ['es2015']
 					},
 					test:/\.js$/,
-					exlude: /node_modules/
+					exclude: /node_modules/
 
 				}
 		]
