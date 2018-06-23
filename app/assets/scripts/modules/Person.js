@@ -1,10 +1,13 @@
-function Preson (fullName,favColor){
-	this.name = fullName;
-	this.favoriteColor = favColor;
+class Person {
+	constructor(fullName,favColor){
 
-	this.greet = function (){
-		console.log("Hello there my name is " +this.name+ " and may favorite color is " +this.favoriteColor+ "." );
+		this.name = fullName;
+		this.favoriteColor = favColor;
+	}
+
+	greet(){
+		console.log("hello there my name is " +this.name+ " and may favorite color is " +this.favoriteColor+ "." );
 	}
 }
 
-module.exports = Preson;
+export default Person;
