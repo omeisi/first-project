@@ -5,12 +5,22 @@
 	width: 100%; /*use the full width of the screen*/
 	transition: background-color 0.3s ease-out;
 
+
+
 	&__is-expanded {
 		background-color: rgba($mainBlue,0.55);
 	}
 
 	@mixin atMedium {
+
+		position:fixed;
 		background-color: rgba($mainBlue,0.3);
+
+		&__dark{
+			background-color: rgba(23, 51, 72, .85);
+		}
+
+		
 	}
 
 	&__btn-container {
@@ -25,6 +35,7 @@
 		left:50%; 
 		transform: translateX(-50%) scale(.8);
 		transform-origin:50% 0;
+		transition: transform .3s ease-out; /*fade slowly*/
 		position: absolute;
 		background-color: $mainBlue;
 		padding: 25px 35px ;
@@ -34,6 +45,11 @@
 		@mixin atMedium {
 			left:auto;
 			transform: translateX(0);
+
+			/*.site-header__dark & = will target the "logo" just when dark being use*/
+			.site-header__dark & {
+				transform: scale(.57);
+			}
 
 		}
 	}
