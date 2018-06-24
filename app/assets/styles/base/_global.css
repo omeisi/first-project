@@ -1,9 +1,7 @@
-* {
-	box-sizing: border-box;
-}
+
 
 a {
-	color:$mainOrange;
+	color:$mainOrange; /*no reason for this onebut some how it is works when i do it*/
 }
 
 body {
@@ -15,4 +13,12 @@ img {
 	
 	max-width: 100%;
 	height: auto;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+a {
+	color:$mainOrange;
 }

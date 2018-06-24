@@ -1,3 +1,3 @@
-console.log("this is a test aviaf");
-console.log("this is a test t");
-alert("aviad omeisi");
+import MobileMenu from './modules/MobileMenu';
+
+var mobileMenu = new MobileMenu();

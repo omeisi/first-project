@@ -1,7 +1,16 @@
 .primery-nav{
 
+	padding-top: 10px;
+
+	@mixin atMedium {
+		padding-top: 0;
+	}
+
 	&__pull-right{
-		float: right;
+
+		@mixin atMedium {
+			float: right;
+		}
 	}
 
 	ul {
@@ -13,8 +22,22 @@
 
 	li {
 		list-style: none; /* takes the bullets away*/
-		float:left;
-		padding-right: 20px;/* makes a space between the tabs*/
+		display: inline-block; /*makes the content in one line if there is space*/
+		padding-right: 7px;/* makes a space between the tabs*/
+
+		@mixin atMedium {
+			float:left;
+			display: block;
+			padding-right: 20px;
+		}
+	}
+
+	li:last-child {
+		padding-right: 0;
+
+		@mixin atMedium {
+			padding-right: 20px;
+		}
 	}
 
 	a {
@@ -22,6 +45,14 @@
 		text-decoration: none; /*remove the under line from the word*/
 		font-weight: 300;
 		display: block;
-		padding: 12px 0;
+		padding: 5px 8px;
+		font-size: 0.7rem;
+		background-color: rgba($mainBlue, 0.5);
+
+		@mixin atMedium {
+			font-size: 1rem;
+			padding: 12px 0;
+			background-color: transparent;
+		}
 	}
 }
