@@ -48,7 +48,7 @@
 
 			/*.site-header__dark & = will target the "logo" just when dark being use*/
 			.site-header__dark & {
-				transform: scale(.57);
+				transform: scale(.56);
 			}
 
 		}

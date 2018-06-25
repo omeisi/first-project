@@ -101,8 +101,9 @@
 
 		/* begin equel height rulls*/
 
-		&__same-height-at-med {
-				@mixin atMedium {
+		.flexbox &__same-height-at-med {
+				
+			@mixin atMedium {
 					display: flex;
 				}
 
@@ -112,8 +113,9 @@
 				}
 			}
 
-		&__same-height-at-large {
-				@mixin atLarge {
+		.flexbox &__same-height-at-large {
+			
+			@mixin atLarge {
 					display: flex;
 				}
 
