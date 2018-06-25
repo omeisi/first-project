@@ -341,8 +341,6 @@ template {
   display: none;
 }
 
-&lightBlue: #e0e6ef;
-
 a {
 	color:#d59541; /*no reason for this onebut some how it is works when i do it*/
 }
@@ -582,19 +580,18 @@ a {
 
 .page-section__testimonials {
 
-		background-color: lightBlue;
+		background-color: #e0e6ef;
 
 		
 	}
 
 @media (min-width: 1010px){
-
-.page-section__testimonials {
-			background: url('/assets/images/testimonials-bg.jpg') top center no-repeat; /*this is how you add a picture as a background*/
-			background-size: cover /*will always cover the div with the picture*/
+			.page-section__testimonials.lazyloaded {
+				background: url('/assets/images/testimonials-bg.jpg') top center no-repeat; /*this is how you add a picture as a background*/
+				background-size: cover; /*will always cover the div with the picture*/
 
 		
-	}
+			}
 	}
 
 .headline {
